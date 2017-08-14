@@ -15,7 +15,7 @@
 from platformio.managers.platform import PlatformBase
 
 
-class Nordicnrf52Platform(PlatformBase):
+class Nordicnrf52proxxiPlatform(PlatformBase):
 
     def is_embedded(self):
         return True
