@@ -155,10 +155,14 @@ if env.subst("$PIOFRAMEWORK") == "arduino":
         "upload", target_firm,
         env.VerboseAction("$UPLOADCMD", "Uploading $SOURCE"))
 else:
+    # target_upload = env.Alias(
+    #     "upload", target_firm,
+    #     [env.VerboseAction(env.AutodetectUploadPort, "Looking for upload disk..."),
+    #      env.VerboseAction(env.UploadToDisk, "Uploading $SOURCE")])
     target_upload = env.Alias(
         "upload", target_firm,
-        [env.VerboseAction(env.AutodetectUploadPort, "Looking for upload disk..."),
-         env.VerboseAction(env.UploadToDisk, "Uploading $SOURCE")])
+        env.VerboseAction("nrfjprog --program $SOURCE --chiperase","Uploading $SOURCE"))
+
 AlwaysBuild(target_upload)
 
 #
