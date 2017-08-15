@@ -1,5 +1,8 @@
 [submodule "builder/frameworks/mbed"]
-	path = builder/frameworks/mbed
+    path = builder/frameworks/mbed
+    url = https://github.com/platformio/builder-framework-mbed
+[submodule "builder/frameworks/mbed-proxxi"]
+	path = builder/frameworks/mbed-proxxi
 	url = https://github.com/ProxxiTech/builder-framework-mbed
 [submodule "builder/frameworks/arduino"]
 	path = builder/frameworks/arduino

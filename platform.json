@@ -37,7 +37,7 @@
     },
     "mbed-proxxi": {
       "package": "framework-mbed-proxxi",
-      "script": "builder/frameworks/mbed/mbed.py"
+      "script": "builder/frameworks/mbed-proxxi/mbed.py"
     }
   },
   "packages": {
