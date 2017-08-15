@@ -30,7 +30,8 @@
   },
   "frameworks": [
     "arduino",
-    "mbed"
+    "mbed",
+    "mbed-proxxi"
   ],
   "name": "Proxxi Board",
   "upload": {

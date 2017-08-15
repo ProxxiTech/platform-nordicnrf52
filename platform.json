@@ -14,7 +14,17 @@
   },
   "version": "1.2.0",
   "packageRepositories": [
-    "manifest.json"
+    "manifest.json",
+    {
+      "framework-mbed-proxxi": [
+        {
+          "sha1": "8b5f466960fed7cd48e6fbd1f22b8a02f2bea2b5",
+          "system": "*",
+          "url": "file:///home/richardromanow/proxxiband/repo/framework-mbed-proxxi",
+          "version": "1.0.0"
+        }
+      ]
+    }
   ],
   "frameworks": {
     "arduino": {
@@ -23,6 +33,10 @@
     },
     "mbed": {
       "package": "framework-mbed",
+      "script": "builder/frameworks/mbed/mbed.py"
+    },
+    "mbed-proxxi": {
+      "package": "framework-mbed-proxxi",
       "script": "builder/frameworks/mbed/mbed.py"
     }
   },
@@ -35,6 +49,11 @@
       "type": "framework",
       "optional": true,
       "version": "~4.148.0"
+    },
+    "framework-mbed-proxxi": {
+      "type": "framework",
+      "optional": false,
+      "version": "1.0.0"
     },
     "framework-arduinonordicnrf5": {
       "type": "framework",
