@@ -12,9 +12,14 @@ The nRF52 Series are built for speed to carry out increasingly complex tasks in 
 1. [Install PlatformIO Core](http://docs.platformio.org/page/core.html)
 2. Install Nordic nRF52 development platform:
 ```bash
-# install the latest stable version
-> platformio platform install nordicnrf52
-
 # install development version
-> platformio platform install https://github.com/platformio/platform-nordicnrf52.git
+> platformio platform install https://github.com/proxxitech/platform-nordicnrf52.git
+
+# install local version
+> git clone git@github.com:ProxxiTech/platform-nordicnrf52.git
+> platformio platform install /path/to/this/repo/
+
+# Remove the local version 
+> cd ~/.platformio/platforms
+> rm -rf nordicnrf52proxxi
 ```
